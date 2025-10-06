@@ -6,7 +6,7 @@ const authRoutes = require('./routes/authRoutes');
 
 // Middleware
 app.use(express.static('public'));
-// View engine
+app.use(express.json());
 app.set('view engine', 'ejs');
 
 // Build MongoDB connection string from environment variables
